@@ -1,0 +1,143 @@
+Sheet No : 0
+
+org.apache.xerces.dom.DeepNodeListImpl@1220b36
+Sheet No : 0
+
+org.apache.xerces.dom.DeepNodeListImpl@1a9db992
+Sheet No : 0
+Forgot my Password
+
+org.apache.xerces.dom.DeepNodeListImpl@5ffbc355
+Sheet No : 0
+
+org.apache.xerces.dom.DeepNodeListImpl@68c12474
+Sheet No : 4
+
+org.apache.xerces.dom.DeepNodeListImpl@4e0a2a38
+Sheet No : 4
+
+org.apache.xerces.dom.DeepNodeListImpl@7e413fc6
+Command duration or timeout: 1800.02 seconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '3.2.0-24-generic', java.version: '1.6.0_26'
+Session ID: 938b20e0-d3ce-4014-8d7b-32ea82faf5c1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}])
+Sheet No : 4
+
+org.apache.xerces.dom.DeepNodeListImpl@1d1d2066
+Sheet No : 4
+
+org.apache.xerces.dom.DeepNodeListImpl@de26e52
+Sheet No : 4
+
+org.apache.xerces.dom.DeepNodeListImpl@606ac615
+Sheet No : 4
+
+org.apache.xerces.dom.DeepNodeListImpl@9e21f52
+Sheet No : 1
+
+org.apache.xerces.dom.DeepNodeListImpl@4a009ab0
+Sheet No : 1
+296
+
+org.apache.xerces.dom.DeepNodeListImpl@20ca5bff
+Sheet No : 1
+
+org.apache.xerces.dom.DeepNodeListImpl@47e7d503
+Sheet No : 1
+
+org.apache.xerces.dom.DeepNodeListImpl@50152643
+Sheet No : 1
+
+org.apache.xerces.dom.DeepNodeListImpl@4a005364
+Sheet No : 1
+
+org.apache.xerces.dom.DeepNodeListImpl@7dbd9d76
+Sheet No : 1
+
+org.apache.xerces.dom.DeepNodeListImpl@56d99277
+Sheet No : 1
+
+org.apache.xerces.dom.DeepNodeListImpl@7182c2d9
+Sheet No : 1
+Please enter valid Phone Number format (eg.732-757-2923).
+Please enter valid Phone Number format (eg.732-757-2923).
+Please enter valid Phone Number format (eg.732-757-2923).
+Please enter valid Phone Number format (eg.732-757-2923).
+Please provide a contact number.
+Please provide a contact number.
+Please enter valid Phone Number format (eg.732-757-2923).
+Please enter valid Phone Number format (eg.732-757-2923).
+Please enter valid Phone Number format (eg.732-757-2923).
+Please enter valid Phone Number format (eg.732-757-2923).
+Please enter valid Phone Number format (eg.732-757-2923).
+Please enter valid Phone Number format (eg.732-757-2923).
+
+org.apache.xerces.dom.DeepNodeListImpl@4d7c6bf
+Sheet No : 1
+
+org.apache.xerces.dom.DeepNodeListImpl@2d58497c
+Sheet No : 1
+0    [main] ERROR com.sigma.demo.FrameWork.Utils.DemoStartUp - An error occurred in testDealerUserStatusSearch
+187  [main] INFO  com.sigma.demo.FrameWork.Utils.DemoStartUp - Save the screenshot.
+Not able to find actual Value
+org.apache.xerces.dom.DeepNodeListImpl@52352d87
+Sheet No : 1
+38543 [main] ERROR com.sigma.demo.FrameWork.Utils.DemoStartUp - An error occurred in testDealerDetailsManage
+38704 [main] INFO  com.sigma.demo.FrameWork.Utils.DemoStartUp - Save the screenshot.
+Element Not Found
+org.apache.xerces.dom.DeepNodeListImpl@6f7834de
+Command duration or timeout: 30.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '3.2.0-24-generic', java.version: '1.6.0_26'
+Session ID: 2baebd79-aa68-4c71-beb5-796e2d4888c2
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=17.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}])
+Sheet No : 3
+
+org.apache.xerces.dom.DeepNodeListImpl@5945a5a
+Sheet No : 3
+
+org.apache.xerces.dom.DeepNodeListImpl@53b258fa
+Sheet No : 3
+
+org.apache.xerces.dom.DeepNodeListImpl@ed6ee28
+Sheet No : 3
+
+org.apache.xerces.dom.DeepNodeListImpl@1167acf2
+Sheet No : 3
+537854 [main] ERROR com.sigma.demo.FrameWork.Utils.DemoStartUp - An error occurred in testChangeFileGroupSubName
+538015 [main] INFO  com.sigma.demo.FrameWork.Utils.DemoStartUp - Save the screenshot.
+No element found
+org.apache.xerces.dom.DeepNodeListImpl@126212dd
+Sheet No : 2
+
+org.apache.xerces.dom.DeepNodeListImpl@705ba50e
+Sheet No : 2
+
+org.apache.xerces.dom.DeepNodeListImpl@57132e76
+Sheet No : 2
+
+org.apache.xerces.dom.DeepNodeListImpl@7e266b44
+Sheet No : 2
+Throwing no element
+
+org.apache.xerces.dom.DeepNodeListImpl@cc749e4
+Sheet No : 2
+
+org.apache.xerces.dom.DeepNodeListImpl@4a393167
+Sheet No : 2
+
+org.apache.xerces.dom.DeepNodeListImpl@6feb139e
+Sheet No : 2
+NOW AT EOD OF POLLICY GUIDELINES ----- 
+FileUpload-0----Files uploaded successfully
+01/27/2013
+
+org.apache.xerces.dom.DeepNodeListImpl@70e8fdc9
+Sheet No : 2
+
+org.apache.xerces.dom.DeepNodeListImpl@41264666
+

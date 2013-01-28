@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Tests" basedir=".">
+	<property name="config" location="config" />
+	<property name="build.test" location="build/classes" />
+	<property name="build.test.src" location="src" />
+	<property name="test.last" location="results" />
+	<!--
+    <property name="test.logs" location="logs" />
+	<property name="test.screenshot" location="screenshots" />
+	<property name="test.report" location="reports" />
+	-->
+	<property name="lib" location="lib" />
+	<target name="init">
+		<!--	<record name="${test.last}/logs/build.log" loglevel="verbose" append="false" /> -->
+		<echo message="Making Needed Test Directories" level="info" />
+		<mkdir dir="${build.test}" />
+		<mkdir dir="${test.last}/logs" />
+		<mkdir dir="${test.last}/screenshots" />
+		<mkdir dir="${test.last}/reports" />
+		<mkdir dir="${test.last}/reports/html" />
+		<mkdir dir="${test.last}/reports/xml" />
+		<mkdir dir="${test.last}/reports/framedxml" />
+	</target>
+	<path id="test.classpath">
+		<pathelement location="${build.test}" />
+		<pathelement location="${config}" />
+		<fileset dir="${basedir}/lib" includes="**/*.jar" />
+	</path>
+	<target name="compile" depends="init">
+		<echo message="Compiling the test classes" level="info" />
+		<javac srcdir="${build.test.src}" destdir="${build.test}" includeantruntime="false" deprecation="on" encoding="UTF-8" debug="on" fork="true" debuglevel="lines,vars,source" classpathref="test.classpath" />
+	</target>
+	<target name="selenium.server.start">
+		<echo message="Starting Selenium Server" level="info" />
+		<java jar="${lib}/selenium-server-standalone-2.28.0.jar" fork="true" spawn="true">
+		</java>
+		<echo taskname="waitfor" message="wait for server to launch" />
+		<waitfor maxwait="3" maxwaitunit="minute" checkevery="500">
+			<http url="http://localhost:4444/selenium-server/driver/?cmd=testComplete" />
+		</waitfor>
+	</target>
+	<target name="selenium.server.stop">
+		<echo message="Stopping Selenium Server" level="info" />
+		<touch file="${test.last}/logs/result.txt" />
+		<get taskname="selenium-shutdown" src="http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer" dest="${test.last}/logs/result.txt" ignoreerrors="true" />
+		<sleep seconds="5" />
+		<echo taskname="selenium-shutdown" message="Server is getting shut down" />
+	</target>
+	<target name="clean" description="Cleaning up generated Directories. It will destroy Logs,ScreenShots,Reports and Classes">
+		<delete dir="${build.test}" />
+		<delete dir="${test.last}" />
+	</target>
+	<target name="test.integration" depends="compile">
+		<echo message="Execute an integration test." level="info" />
+		<antcall target="selenium.server.start" />
+		<junit fork="no" haltonfailure="true" printsummary="withOutAndErr">
+			<test name="${testclass}" todir="${test.last}/reports/xml" />
+			<formatter type="xml" />
+			<classpath>
+				<path refid="test.classpath" />
+			</classpath>
+		</junit>
+		<antcall target="selenium.server.stop" />
+	</target>
+	<target name="run.create.xmlreports" depends="compile" description="running test cases">
+		<antcall target="compile" />
+		<junit fork="true" printSummary="true" showOutput="true">
+			<classpath refid="test.classpath" />
+			<formatter type="xml" />
+			<batchtest fork="true" todir="${test.last}/reports/xml">
+				<fileset dir="${build.test.src}">
+					<include name="**/*Test.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+	<target name="report" description="Generate report for test class" >
+		<antcall target="selenium.server.start" />
+		<echo message="Generating test report" level="info" />
+		<tstamp>
+			<format property="timestamp" pattern="yyyyMMddHHmmss" />
+		</tstamp>
+		<junitreport todir="${test.last}/reports/html">
+			<fileset dir="${test.last}/reports/xml">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="${test.last}/reports/html" />
+		</junitreport>
+		<antcall target="selenium.server.stop" />
+	</target>
+</project>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite id="LOGIN MODULE" name="LOGIN MODULE">
+<testcase>
+<id>LoginConnectPlus</id>
+<testdetails>Providing all the valid login credentials</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>InvalidLoginWithOutUserID</id>
+<testdetails>Providing valid password and not the username</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>InvalidLoginWithOutPWD</id>
+<testdetails>Providing valid username and not the password</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>InvalidLogin</id>
+<testdetails>No user name  and password</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalResourceCenter</id>
+<testdetails>Uploading url</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PA_ResourceCenterSubmitAll</id>
+<testdetails>Submitting all valid values</testdetails>
+<teststatus/>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PA_ResourceCenterCancelAll</id>
+<testdetails>Cancelling all valid values</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PA_ResourceCenterSubmitWithoutVal</id>
+<testdetails>Submitting without values</testdetails>
+<teststatus/>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PA_ResourceCenterCancelWithoutVal</id>
+<testdetails>Cancelling without values</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PA_ResourceCenterDealerTab</id>
+<testdetails>Checking dealer resource center tab</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalRequest</id>
+<testdetails>Providing all the valid credentials for all the fields</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>RequestPA_Pending</id>
+<testdetails>Checking whether status is pending</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>HIGH</testseverity>
+</testcase>
+<testcase>
+<id>RequestPA_Deny</id>
+<testdetails>Checking whether status got denied</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>HIGH</testseverity>
+</testcase>
+<testcase>
+<id>RequestPA_Modified</id>
+<testdetails>Checking whether status got modified</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>HIGH</testseverity>
+</testcase>
+<testcase>
+<id>RequestPA_OnGoingRadioButton</id>
+<testdetails>selecting ongoing activity radio button and other providing value for other fields</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>HIGH</testseverity>
+</testcase>
+<testcase>
+<id>RequestPA_AllFieldsNull</id>
+<testdetails>Making fields as empty</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>RequestPA_CalendarDateValidation</id>
+<testdetails>Checking condition for start date greater than end date</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PA_FieldContactNameValidation</id>
+<testdetails>Givingn invalid contact name</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PA_FieldContactPhoneValidation</id>
+<testdetails>Giving Invalid Phone Number</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>PA_FieldContactEmailValidation</id>
+<testdetails>Giving Invalid Email</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>RequestPA_SearchAP</id>
+<testdetails>Giving Search for approved and pending</testdetails>
+<teststatus>FAIL</teststatus>
+<testerror>Not able to find actual Value</testerror>
+<testscreenshot>/home/sigma/SeleniumWS/DemoStartUp/results/screenshots/testDealerUserStatusSearch.png</testscreenshot>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>RequestPA_DealerManage</id>
+<testdetails>Searching for dealer details</testdetails>
+<teststatus>FAIL</teststatus>
+<testerror>Element Not Found</testerror>
+<testscreenshot>/home/sigma/SeleniumWS/DemoStartUp/results/screenshots/testDealerDetailsManage.png</testscreenshot>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>TrainingCenterTabPage</id>
+<testdetails>Conforming training center page</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>TrainingCenterVideos</id>
+<testdetails>Uploading videos only</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>HIGH</testseverity>
+</testcase>
+<testcase>
+<id>TrainingCenterWebinars</id>
+<testdetails>Uploading videos and other files also</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>TrainingCenterDownloads</id>
+<testdetails>Uploading any kind of files</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>TrainingCentersubGroupChange</id>
+<testdetails>Changing subgroup Name</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror>No element found</testerror>
+<testscreenshot>/home/sigma/SeleniumWS/DemoStartUp/results/screenshots/testChangeFileGroupSubName.png</testscreenshot>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalPolicyGuideLine</id>
+<testdetails>Policy guideline checking</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalPolicyGuideLineCancel</id>
+<testdetails>Policy guideline clicking cancel without values</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalPolicyGuideLineSubmit</id>
+<testdetails>Policy guideline clicking submit without values</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalPolicyGuideLineFileTitle</id>
+<testdetails>Policy guideline Filetitle validation</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalPolicyGuideLineThumbNail</id>
+<testdetails>Policy guideline Thumbnail validation</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalPolicyGuideLineUploadUrl</id>
+<testdetails>In policy guidelines providing url and not uploading files</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>HIGH</testseverity>
+</testcase>
+<testcase>
+<id>PriorApprovalPolicyGuideLineUploadFile</id>
+<testdetails>In policy guidelines providing uploading files and not url</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>PolicyGuidelinesAllFieldsNull</id>
+<testdetails>Making all fields as null</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>LoginConnectPlus</id>
+<testdetails>Providing all the valid login credentials</testdetails>
+<teststatus/>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>LoginConnectPlus</id>
+<testdetails>Providing all the valid login credentials</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>InvalidLoginWithOutUserID</id>
+<testdetails>Providing valid password and not the username</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>LOW</testseverity>
+</testcase>
+<testcase>
+<id>InvalidLoginWithOutPWD</id>
+<testdetails>Providing valid username and not the password</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>InvalidLoginWithOutPWD</id>
+<testdetails>Providing valid username and not the password</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>InvalidLoginWithOutPWD</id>
+<testdetails>Providing valid username and not the password</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+<testcase>
+<id>InvalidLoginWithOutPWD</id>
+<testdetails>Providing valid username and not the password</testdetails>
+<teststatus>SUCCESS</teststatus>
+<testerror/>
+<testscreenshot/>
+<testseverity>MEDIUM</testseverity>
+</testcase>
+</testsuite>

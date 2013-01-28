@@ -1,0 +1,14 @@
+testChangeFileGroupSubName - Change file group subname(Error occured since subgroup name get replaced with space)
+
+testDealerDetailsManage -Doing operations inside Manage tab(Error occured Since manage tab is not visible) 
+NB: While searching internal server error is coming..
+(Write a test case without giving date).
+
+testDealerUserStatusSearch - if we give from and to date, and click manage it will throw 500 Status error.
+
+testPriorApprovalTrainingCenterTab - It a continuation 1st since name get changed
+
+testPolicyGuideLineFileTitle - Working Fine
+
+testFieldValidationContactPhoneValidation - Working fine
+

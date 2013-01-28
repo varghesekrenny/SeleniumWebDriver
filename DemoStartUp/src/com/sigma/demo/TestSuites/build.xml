@@ -1,0 +1,8 @@
+<project name="AdministrationSuite" default="test.integration" basedir="../../../../..">
+<import file="../../../../../build.xml"/>	
+	  <target name="test.integration.testsuites">
+	    <antcall target="test.integration">
+	      <param name="testclass" value="com.sigma.demo.TestSuites.AdministrationSuite" />
+	    </antcall>
+	  </target>	
+</project>

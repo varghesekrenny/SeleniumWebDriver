@@ -1,0 +1,25 @@
+#author:varghese
+# to enable file logging add ", R" to the line below
+log4j.rootLogger=INFO, C, R
+
+# Set our global levels
+log4j.logger.org=WARN
+log4j.logger.com=WARN
+log4j.logger.com.thoughtworks.selenium=WARN
+log4j.logger.com.sigma.test=TRACE
+
+log4j.appender.R=org.apache.log4j.RollingFileAppender
+log4j.appender.R.File=/home/sigma/SeleniumWS/DemoStartUp/results/logs/execution.log
+log4j.appender.R.MaxFileSize=10000KB
+
+# R uses PatternLayout.
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+log4j.appender.R.layout.ConversionPattern=%d{HH:mm:ss} [%t] %-5p %c - %m%n
+
+# Keep one backup file
+log4j.appender.R.MaxBackupIndex=1
+
+# C is an optional ConsoleAppender for usage in i.e. Eclipse
+log4j.appender.C=org.apache.log4j.ConsoleAppender
+log4j.appender.C.layout=org.apache.log4j.PatternLayout
+log4j.appender.C.layout.ConversionPattern=%-4r [%t] %-5p %c - %m%n
